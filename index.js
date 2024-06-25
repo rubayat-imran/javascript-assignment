@@ -62,7 +62,7 @@ function filterOddNumbers(numbers) {
     throw new Error('Input must be an array');
   }
 
-  return numbers.filter(num => num % 2 !== 0 && typeof num === 'number');
+  return numbers.filter(num => typeof num === 'number' && num % 2 !== 0);
 }
 
 
